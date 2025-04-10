@@ -1,5 +1,14 @@
+.section {
+	margin: 0 auto;
+}
+.container{
+	display: flex;
+	flex-direction: column;
+	margin: 0 auto;
+}
 .books-wrapper{
 	display: flex;
+	margin: 0 auto;
 	flex-wrap: wrap;
 	padding: 1rem;
 	gap: 1rem;
@@ -9,7 +18,7 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	width: fit-content;
+	max-width: fit-content;
 	min-width: 240px;
 	padding: 1rem;
 	border-radius: 12px;
@@ -27,11 +36,16 @@
 	color: red;
 }
 
-.add-item.material-symbols-outlined{
+.add-item{
+	order: 9999999;
+}
+
+.add-item>.material-symbols-outlined{
 	color: rgb(196, 196, 196);
 	font-size: 42px;
 }
-.add-item.material-symbols-outlined:hover{
+
+.add-item>.material-symbols-outlined:hover{
 	cursor: pointer;
 	color: rgb(29, 29, 29);
 }

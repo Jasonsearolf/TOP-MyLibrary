@@ -60,8 +60,8 @@ function domBookCreate (title, author, pages){
 }
 
 function displayBooks (array) {
-	array.forEach(element => {
-		domBookCreate(element.title, element.author, element.pages)
+	array.forEach(({title, author, pages}) => {
+		domBookCreate(title, author, pages);
 	});
 	/* for (let i = 0; i < array.length; i++) {
 		console.table(array[i]);
